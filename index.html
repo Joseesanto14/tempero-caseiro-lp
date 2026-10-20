@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Tempero Caseiro | O Melhor de Bofete - SP | Cardápio & Marmitex</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Eleito o Melhor Restaurante de Bofete no Prêmio Top 2024. Buffet self-service farto, carnes assadas suculentas e marmitex a partir de R$ 22,00 com entrega rápida. Peça pelo WhatsApp!">
+  <meta name="keywords" content="Restaurante Bofete, Tempero Caseiro Bofete, Marmitex Bofete, Comida Caseira Bofete, Almoço Bofete, Delivery Bofete, Churrasco Bofete">
+  <meta name="author" content="Restaurante Tempero Caseiro Bofete">
+  
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Restaurante Tempero Caseiro | Eleito o Melhor de Bofete (Top 2024)">
+  <meta property="og:description" content="Buffet self-service completo, carnes assadas no ponto e marmitex farto (P, M, G). Peça online ou no WhatsApp!">
+  <meta property="og:image" content="./assets/self-service.png">
+  <meta property="og:url" content="https://menuprime.com.br/tempero-caseiro">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CONVERTON DESIGN SYSTEM - TEMPERO CASEIRO (BOFETE - SP)
+       Arquétipo: Gastronomia Afetiva, Tradição Caipira, Sabor Real e Máxima Conversão
+       ========================================================================== */
+    :root {
+      /* Cores Principais */
+      --primary: #D35400;             /* Terracota e brasa apetitosa */
+      --primary-hover: #B84300;
+      --primary-light: #FDF2E9;
+      --primary-glow: rgba(211, 84, 0, 0.28);
+      
+      /* Cores de Destaque */
+      --accent: #E67E22;              /* Âmbar dourado do tempero */
+      --accent-gold: #F39C12;         /* Dourado do Prêmio Top 2024 */
+      --accent-gold-bg: #FFF8E7;
+      --success: #27AE60;             /* Aberto / Garantia */
+      --whatsapp: #25D366;            /* WhatsApp oficial */
+      --whatsapp-hover: #1EAE53;
+      
+      /* Neutros & Superfícies */
+      --bg-body: #FAF7F2;             /* Fundo linho acolhedor */
+      --bg-card: #FFFFFF;
+      --bg-card-alt: #F5EFEB;
+      --bg-dark: #1E1712;             /* Madeira nobre escura e carvão */
+      --bg-dark-card: #2B211A;
+      
+      /* Tipografia */
+      --text-main: #231B15;
+      --text-muted: #6B5E55;
+      --text-light: #F9F6F0;
+      --text-light-muted: #C9BEB5;
+      
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      
+      /* Raios e Bordas */
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      --border-color: #EBDED4;
+      --border-dark: #3F3229;
+      
+      /* Dimensões */
+      --container-max: 1340px;
+      --header-height: 80px;
+      --shadow-sm: 0 2px 8px rgba(35, 27, 21, 0.05);
+      --shadow-md: 0 10px 25px rgba(35, 27, 21, 0.08);
+      --shadow-lg: 0 20px 45px rgba(35, 27, 21, 0.12);
+      --shadow-glow: 0 12px 30px rgba(211, 84, 0, 0.35);
+      
+      --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-fast);
+    }
+
+    ul { list-style: none; }
+
+    button {
+      cursor: pointer;
+      font-family: inherit;
+      border: none;
+      background: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-heading);
+      color: var(--text-main);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .text-center { text-align: center; }
+    .text-primary { color: var(--primary); }
+
+    /* Barra Superior Informativa */
+    .top-bar {
+      background-color: var(--bg-dark);
+      color: var(--text-light-muted);
+      font-size: 0.85rem;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: nowrap;
+    }
+
+    .top-bar-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .top-badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 2px 10px;
+      background: rgba(39, 174, 96, 0.18);
+      border: 1px solid rgba(39, 174, 96, 0.4);
+      color: #48C774;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.75rem;
+      white-space: nowrap;
+    }
+
+    .top-badge-status .pulse-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #27AE60;
+      border-radius: 50%;
+      animation: pulseGreen 1.8s infinite;
+    }
+
+    @keyframes pulseGreen {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.7); }
+      70% { transform: scale(1.15); box-shadow: 0 0 0 6px rgba(39, 174, 96, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(39, 174, 96, 0); }
+    }
+
+    /* Header & Navegação */
+    .main-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(250, 247, 242, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition-smooth);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--header-height);
+      gap: 20px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .brand-logo img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
+      transition: transform var(--transition-fast);
+      flex-shrink: 0;
+    }
+
+    .brand-logo:hover img {
+      transform: scale(1.06) rotate(-2deg);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      white-space: nowrap;
+    }
+
+    .brand-text .title {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--text-main);
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .brand-text .subtitle {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: clamp(12px, 1.6vw, 24px);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .nav-link {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--text-main);
+      position: relative;
+      padding: 6px 0;
+      white-space: nowrap;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width var(--transition-fast);
+      border-radius: 2px;
+    }
+
+    .nav-link:hover { color: var(--primary); }
+    .nav-link:hover::after { width: 100%; }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    /* Botões */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 26px;
+      border-radius: var(--radius-md);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all var(--transition-smooth);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, #E65100 100%);
+      color: #FFFFFF;
+      box-shadow: 0 6px 18px rgba(211, 84, 0, 0.32);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #E65100 0%, #BD3D00 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(211, 84, 0, 0.44);
+      color: #FFFFFF;
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25D366 0%, #1EAE53 100%);
+      color: #FFFFFF;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-whatsapp:hover {
+      background: linear-gradient(135deg, #20BA56 0%, #178A42 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
+      color: #FFFFFF;
+    }
+
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-card-alt);
+      border-color: #D6C2B4;
+      transform: translateY(-2px);
+    }
+
+    .btn-lg {
+      padding: 16px 32px;
+      font-size: 1.08rem;
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 0.88rem;
+      border-radius: var(--radius-sm);
+    }
+
+    /* Menu Mobile */
+    .mobile-menu-btn {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+    }
+
+    .mobile-menu-btn span {
+      width: 22px;
+      height: 2px;
+      background-color: var(--text-main);
+      border-radius: 2px;
+      transition: var(--transition-fast);
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      position: relative;
+      padding: 60px 0 85px;
+      background: radial-gradient(circle at 12% 20%, rgba(243, 156, 18, 0.12) 0%, transparent 42%),
+                  radial-gradient(circle at 88% 75%, rgba(211, 84, 0, 0.08) 0%, transparent 45%);
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .badge-award {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px;
+      background: #FFFFFF;
+      border: 1px solid #F1D492;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 15px rgba(243, 156, 18, 0.18);
+      margin-bottom: 22px;
+    }
+
+    .badge-award-text {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #9C6500;
+    }
+
+    .hero-title {
+      font-size: clamp(2.3rem, 4.2vw, 3.8rem);
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+      color: var(--text-main);
+    }
+
+    .hero-title span.highlight {
+      color: var(--primary);
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-title span.highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: rgba(243, 156, 18, 0.28);
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 30px;
+      max-width: 560px;
+    }
+
+    .hero-pricing-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #FFFFFF;
+      padding: 8px 18px;
+      border-radius: var(--radius-md);
+      border: 1px solid #E5D5C8;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 28px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .hero-pricing-pill .price-tag {
+      color: var(--primary);
+      font-size: 1.18rem;
+      font-weight: 800;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .hero-microcopy {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+    }
+
+    .hero-microcopy span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-microcopy svg {
+      color: var(--success);
+    }
+
+    .hero-proof-bar {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+      flex-wrap: wrap;
+    }
+
+    .proof-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .proof-item .number {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1;
+    }
+
+    .proof-item .label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Hero Visual Card */
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card-main {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      background: var(--bg-card);
+      border: 4px solid #FFFFFF;
+      transition: transform var(--transition-smooth);
+    }
+
+    .hero-card-main img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-card-tag {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: rgba(30, 23, 18, 0.9);
+      backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .hero-floating-badge {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background: #FFFFFF;
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 290px;
+      animation: floatBadge 4s ease-in-out infinite;
+    }
+
+    @keyframes floatBadge {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+
+    .hero-floating-badge .badge-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: #FFF7ED;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--primary);
+    }
+
+    .hero-floating-badge .badge-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      line-height: 1.2;
+    }
+
+    .hero-floating-badge .badge-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* PADDINGS & SECTIONS */
+    .section-padding {
+      padding: 95px 0;
+    }
+
+    .section-header {
+      max-width: 700px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* CARDÁPIO INTERATIVO COM PREÇOS REAIS */
+    .menu-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 45px;
+      flex-wrap: wrap;
+    }
+
+    .menu-tab-btn {
+      padding: 12px 24px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-full);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      transition: all var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .menu-tab-btn.active, .menu-tab-btn:hover {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+      box-shadow: 0 6px 18px rgba(211, 84, 0, 0.28);
+    }
+
+    .menu-tab-pane {
+      display: none;
+    }
+
+    .menu-tab-pane.active {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .menu-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .menu-item-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-smooth);
+      position: relative;
+    }
+
+    .menu-item-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: #E2C9B6;
+    }
+
+    .menu-item-card.featured {
+      border: 2px solid var(--primary);
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: -13px;
+      left: 20px;
+      background: linear-gradient(135deg, var(--primary) 0%, #E65100 100%);
+      color: #FFFFFF;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      z-index: 10;
+      box-shadow: 0 4px 12px rgba(211, 84, 0, 0.28);
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .featured-badge.badge-green {
+      background: linear-gradient(135deg, #27AE60 0%, #1E8449 100%);
+      box-shadow: 0 4px 12px rgba(39, 174, 96, 0.28);
+    }
+
+    .menu-item-header {
+      padding: 24px 24px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .menu-item-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .menu-item-price {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .menu-item-body {
+      padding: 0 24px 20px;
+      flex-grow: 1;
+    }
+
+    .menu-item-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+
+    .menu-item-ingredients {
+      background: var(--bg-body);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      font-size: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      color: var(--text-main);
+    }
+
+    .menu-item-footer {
+      padding: 16px 24px 24px;
+      border-top: 1px dashed var(--border-color);
+      margin-top: auto;
+    }
+
+    /* BANNER ONLINE MENUPRIME */
+    .menuprime-banner {
+      background: linear-gradient(135deg, #FFF5EA 0%, #FFE9D6 100%);
+      border: 2px dashed #E2884A;
+      border-radius: var(--radius-lg);
+      padding: 28px 36px;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .menuprime-text h4 {
+      font-size: 1.25rem;
+      color: #8C3700;
+      margin-bottom: 4px;
+    }
+
+    .menuprime-text p {
+      font-size: 0.95rem;
+      color: #6E3B16;
+    }
+
+    /* DOR VS SOLUÇÃO */
+    .pain-vs-solution-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .comparison-card {
+      padding: 38px;
+      border-radius: var(--radius-lg);
+      position: relative;
+    }
+
+    .comparison-card.pain {
+      background: #FDF4F4;
+      border: 1px solid #F5C6CB;
+    }
+
+    .comparison-card.solution {
+      background: #FFFFFF;
+      border: 2px solid var(--primary);
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+
+    .comparison-card.solution::before {
+      content: 'A Escolha de Bofete';
+      position: absolute;
+      top: -14px;
+      right: 32px;
+      background: var(--primary);
+      color: #FFFFFF;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+    }
+
+    .comparison-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .comparison-card.pain h3 { color: #A92323; }
+    .comparison-card.solution h3 { color: var(--primary); }
+
+    .comparison-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .comparison-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 0.96rem;
+    }
+
+    .comparison-item svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .pain svg { color: #DC3545; }
+    .solution svg { color: #27AE60; }
+
+    /* DIFERENCIAIS */
+    .features-section {
+      background-color: #FFFFFF;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .feature-box {
+      background: var(--bg-body);
+      padding: 30px 22px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      transition: all var(--transition-smooth);
+    }
+
+    .feature-box:hover {
+      background: #FFFFFF;
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent);
+    }
+
+    .feature-icon-wrapper {
+      width: 54px;
+      height: 54px;
+      border-radius: var(--radius-md);
+      background: #FFF1E6;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      font-size: 1.45rem;
+    }
+
+    .feature-box h4 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* GALERIA REAL */
+    .gallery-section {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      padding: 95px 0;
+    }
+
+    .gallery-section .section-title { color: #FFFFFF; }
+    .gallery-section .section-subtitle { color: var(--text-light-muted); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-rows: 270px 270px;
+      gap: 24px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-dark);
+    }
+
+    .gallery-item.large { grid-row: span 2; }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-item:hover img { transform: scale(1.05); }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(10, 7, 5, 0.88) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      pointer-events: none;
+    }
+
+    .gallery-overlay h4 {
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+
+    .gallery-overlay p {
+      color: var(--text-light-muted);
+      font-size: 0.88rem;
+    }
+
+    /* AUTORIDADE & PROVA SOCIAL */
+    .award-banner {
+      background: linear-gradient(135deg, #FFF9EB 0%, #FFF3D6 100%);
+      border: 2px solid #F3C452;
+      border-radius: var(--radius-lg);
+      padding: 38px 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 36px;
+      box-shadow: 0 15px 35px rgba(243, 156, 18, 0.12);
+      margin-bottom: 65px;
+    }
+
+    .award-badge-huge {
+      width: 96px;
+      height: 96px;
+      background: linear-gradient(135deg, #F39C12 0%, #D68910 100%);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      box-shadow: 0 8px 25px rgba(243, 156, 18, 0.4);
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .award-badge-huge .trophy { font-size: 2rem; line-height: 1; }
+    .award-badge-huge span {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .award-content h3 {
+      font-size: 1.6rem;
+      color: #7D5100;
+      margin-bottom: 8px;
+    }
+
+    .award-content p {
+      color: #634305;
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .testimonial-card {
+      background: #FFFFFF;
+      padding: 30px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .testimonial-stars {
+      color: #F59E0B;
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+
+    .testimonial-text {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid #F0E6DE;
+      padding-top: 16px;
+    }
+
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #EAE0D6;
+      color: var(--primary);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .author-info h5 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .author-info span {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* PASSOS DE PEDIDO */
+    .steps-section {
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .step-card {
+      text-align: center;
+      padding: 34px 26px;
+      background: var(--bg-body);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .step-number {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 18px;
+      background: var(--primary);
+      color: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.3rem;
+      box-shadow: 0 6px 18px rgba(211, 84, 0, 0.3);
+    }
+
+    .step-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .step-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* FAQ INTERATIVO */
+    .faq-container {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .faq-item {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      transition: border-color var(--transition-fast);
+    }
+
+    .faq-item.active {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-header {
+      width: 100%;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      transition: color var(--transition-fast);
+    }
+
+    .faq-item.active .faq-header { color: var(--primary); }
+
+    .faq-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--bg-body);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform var(--transition-smooth), background var(--transition-fast);
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+      background: #FFF1E6;
+      color: var(--primary);
+    }
+
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease-out;
+      background: #FFFFFF;
+    }
+
+    .faq-body {
+      padding: 0 24px 22px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      border-top: 1px solid #FAF4EE;
+      padding-top: 14px;
+    }
+
+    /* LOCALIZAÇÃO & CONTATO */
+    .location-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .location-info {
+      padding: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .location-info h3 {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+    }
+
+    .location-details {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 30px;
+    }
+
+    .loc-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .loc-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      background: #FFF1E6;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .loc-text h5 {
+      font-size: 0.98rem;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .loc-text p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .location-map-wrapper {
+      position: relative;
+      min-height: 380px;
+      background: #EBE3DA;
+    }
+
+    .location-map-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .location-map-tag {
+      position: absolute;
+      bottom: 18px;
+      left: 18px;
+      background: rgba(30, 23, 18, 0.9);
+      color: #FFFFFF;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* CTA FINAL */
+    .cta-final-section {
+      background: linear-gradient(135deg, #1C1510 0%, #2D1E16 100%);
+      color: #FFFFFF;
+      padding: 85px 0;
+      position: relative;
+      overflow: hidden;
+      border-top: 4px solid var(--primary);
+    }
+
+    .cta-final-box {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-final-box .section-eyebrow { color: var(--accent-gold); }
+
+    .cta-final-box h2 {
+      color: #FFFFFF;
+      font-size: clamp(2.1rem, 3.8vw, 3.1rem);
+      margin-bottom: 18px;
+    }
+
+    .cta-final-box p {
+      color: #D3C4B8;
+      font-size: 1.15rem;
+      margin-bottom: 34px;
+      line-height: 1.6;
+    }
+
+    .cta-final-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 26px;
+    }
+
+    .guarantee-note {
+      font-size: 0.88rem;
+      color: #A8988C;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* FOOTER */
+    .main-footer {
+      background: #140E0A;
+      color: #A39385;
+      padding: 65px 0 28px;
+      border-top: 1px solid #2B1F17;
+      font-size: 0.92rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 36px;
+      margin-bottom: 50px;
+    }
+
+    .footer-brand .brand-logo img {
+      width: 58px;
+      height: 58px;
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p {
+      color: #8C7C6F;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      max-width: 300px;
+    }
+
+    .footer-social-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #251B13;
+      border: 1px solid #38271C;
+      color: #FDFBF7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition-fast);
+    }
+
+    .social-btn:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      color: #FFFFFF;
+    }
+
+    .footer-col h4 {
+      color: #FFFFFF;
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 28px;
+      height: 2px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a:hover {
+      color: #FFFFFF;
+      padding-left: 4px;
+    }
+
+    .footer-hours-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-hours-list li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #231811;
+      padding-bottom: 6px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #241810;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.82rem;
+      color: #6E5F53;
+    }
+
+    /* WHATSAPP FLUTUANTE */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .whatsapp-tooltip {
+      background: #1C1510;
+      color: #FFFFFF;
+      padding: 9px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.84rem;
+      font-weight: 700;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      border: 1px solid #36281F;
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateX(10px);
+      pointer-events: none;
+      transition: all var(--transition-smooth);
+    }
+
+    .whatsapp-float:hover .whatsapp-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .whatsapp-circle {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #25D366 0%, #1EAE53 100%);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+      position: relative;
+      transition: all var(--transition-smooth);
+    }
+
+    .whatsapp-circle::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid #25D366;
+      animation: ripple 2s infinite;
+    }
+
+    @keyframes ripple {
+      0% { transform: scale(0.9); opacity: 0.8; }
+      100% { transform: scale(1.35); opacity: 0; }
+    }
+
+    .whatsapp-float:hover .whatsapp-circle {
+      transform: scale(1.08) rotate(5deg);
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 1120px) {
+      .mobile-menu-btn { display: flex; }
+
+      .nav-menu {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        background: #FFFFFF;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 16px;
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: var(--shadow-md);
+        display: none;
+      }
+
+      .nav-menu.open { display: flex; }
+      .nav-actions .btn { display: none; }
+    }
+
+    @media (max-width: 992px) {
+      .top-bar { display: none; }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+
+      .hero-subtitle { margin: 0 auto 24px; }
+      .hero-cta-group { align-items: center; }
+      .hero-buttons { justify-content: center; }
+      .hero-microcopy { justify-content: center; }
+      .hero-proof-bar { justify-content: center; }
+      .hero-floating-badge { left: 16px; bottom: 16px; }
+
+      .menu-cards-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+
+      .gallery-item.large { grid-row: auto; height: 340px; }
+      .gallery-item { height: 240px; }
+
+      .award-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      .testimonials-grid, .steps-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .location-card { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --header-height: 70px; }
+      .pain-vs-solution-grid { grid-template-columns: 1fr; }
+      .features-grid { grid-template-columns: 1fr; }
+      .location-info { padding: 30px 20px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .whatsapp-tooltip { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. BARRA SUPERIOR DE INFORMAÇÕES RÁPIDAS -->
+  <aside class="top-bar" aria-label="Informações Rápidas">
+    <div class="container">
+      <div class="top-bar-item">
+        <span>📍 Rua Luiz Francisco Vieira, 189, Bofete - SP</span>
+      </div>
+      <div class="top-bar-item">
+        <span class="top-badge-status">
+          <span class="pulse-dot"></span>
+          <span>Aberto Hoje: 10h30 às 15h00</span>
+        </span>
+        <span style="margin-left: 8px;">🛵 Delivery a partir das 11h (Taxa a partir de R$ 3,00)</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. HEADER & NAVEGAÇÃO -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand-logo" title="Restaurante Tempero Caseiro Bofete">
+        <img src="./assets/logo.png" alt="Logo Restaurante Tempero Caseiro Bofete">
+        <div class="brand-text">
+          <span class="title">Tempero Caseiro</span>
+          <span class="subtitle">Bofete • SP</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#cardapio" class="nav-link">Cardápio</a>
+        <a href="#diferenciais" class="nav-link">Diferenciais</a>
+        <a href="#espaco" class="nav-link">Nosso Salão</a>
+        <a href="#avaliacoes" class="nav-link">Prêmio Top 2024</a>
+        <a href="#faq" class="nav-link">Dúvidas</a>
+        <a href="#contato" class="nav-link">Onde Estamos</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/5514981303429?text=Ol%C3%A1%21+Vim+pelo+site+do+Restaurante+Tempero+Caseiro+e+gostaria+de+fazer+um+pedido." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z"/>
+          </svg>
+          Pedir no WhatsApp
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileToggle" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION -->
+  <section class="hero-section" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-award">
+          <span style="font-size: 1.2rem;">🏆</span>
+          <span class="badge-award-text">Eleito o Melhor Restaurante de Bofete • Prêmio Top 2024</span>
+        </div>
+
+        <h1 class="hero-title">
+          O verdadeiro sabor da <span class="highlight">comida caseira</span> feita com amor em Bofete.
+        </h1>
+
+        <p class="hero-subtitle">
+          Buffet self-service completo com carnes assadas no ponto, pratos quentes e a autêntica comida caipira do interior paulista. Almoce em nosso salão 100% climatizado ou receba seu <strong>marmitex quentinho</strong> no trabalho ou em casa.
+        </p>
+
+        <div class="hero-pricing-pill">
+          <span>🍲 Marmitex Completa a partir de:</span>
+          <span class="price-tag">R$ 22,00</span>
+          <span style="color: var(--text-muted); font-size: 0.85rem;">(P, M, G & Churrasco)</span>
+        </div>
+
+        <div class="hero-cta-group">
+          <div class="hero-buttons">
+            <a href="https://wa.me/5514981303429?text=Ol%C3%A1%21+Quero+fazer+um+pedido+de+marmitex+pelo+WhatsApp." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              Pedir Marmitex no WhatsApp
+            </a>
+
+            <a href="https://menuprime.com.br/tempero-caseiro" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              Ver Cardápio Online
+            </a>
+          </div>
+
+          <div class="hero-microcopy">
+            <span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Entrega em toda Bofete (taxa a partir de R$ 3)
+            </span>
+            <span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              PIX, Cartão e VEROCARD
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-proof-bar">
+          <div class="proof-item">
+            <span class="number">1º Lugar</span>
+            <span class="label">Prêmio Top Bofete 2024</span>
+          </div>
+          <div class="proof-item">
+            <span class="number">⭐ 4.9/5</span>
+            <span class="label">Satisfação no Google</span>
+          </div>
+          <div class="proof-item">
+            <span class="number">10h30 às 15h</span>
+            <span class="label">Aberto Todos os Dias</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-main">
+          <img src="./assets/self-service.png" alt="Buffet Self-Service Restaurante Tempero Caseiro Bofete">
+          <div class="hero-card-tag">
+            <span>🔥</span> Comida fresca servida todo dia
+          </div>
+        </div>
+
+        <div class="hero-floating-badge">
+          <div class="badge-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <div>
+            <div class="badge-title">Salão Climatizado</div>
+            <div class="badge-sub">Ar-condicionado duplo e conforto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CARDÁPIO OFICIAL E PREÇOS REAIS -->
+  <section class="section-padding" id="cardapio" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Cardápio Oficial & Valores Atualizados</span>
+        <h2 class="section-title">O que vai ser o seu almoço hoje?</h2>
+        <p class="section-subtitle">Preços reais e opções completas para pedir no delivery ou almoçar em nosso salão.</p>
+      </div>
+
+      <!-- Abas de Navegação do Cardápio -->
+      <div class="menu-tabs">
+        <button class="menu-tab-btn active" data-tab="tab-marmitex">🍱 Marmitex Tradicionais</button>
+        <button class="menu-tab-btn" data-tab="tab-churrasco">🥩 Mix de Churrasco</button>
+        <button class="menu-tab-btn" data-tab="tab-porcoes">🍟 Porções & Acompanhamentos</button>
+        <button class="menu-tab-btn" data-tab="tab-bebidas">🥤 Sucos & Bebidas</button>
+      </div>
+
+      <!-- TAB 1: MARMITEX TRADICIONAIS -->
+      <div class="menu-tab-pane active" id="tab-marmitex">
+        <div class="menu-cards-grid">
+          <!-- Card Marmitex P -->
+          <div class="menu-item-card">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Marmitex Pequena (P)</h3>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Ideal para uma refeição leve</span>
+              </div>
+              <span class="menu-item-price">R$ 22,00</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">Montada com carinho na medida certa para matar sua fome com o melhor tempero de Bofete.</p>
+              <div class="menu-item-ingredients">
+                <div>🍚 <strong>Base:</strong> Arroz soltinho e feijão carioca</div>
+                <div>🥩 <strong>Carnes do dia:</strong> Maminha, linguiça toscana, pernil ao barbecue ou panqueca de carne</div>
+                <div>🥗 <strong>Acompanhamentos:</strong> Farofa de calabresa caseira + refogado + salada ou paçoquinha</div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+pedir+1+Marmitex+Pequena+%28R%24+22%2C00%29." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+                Pedir Marmitex P
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Marmitex M (Mais Pedida) -->
+          <div class="menu-item-card featured">
+            <span class="featured-badge">🔥 Mais Pedida</span>
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Marmitex Média (M)</h3>
+                <span style="font-size: 0.8rem; color: var(--primary); font-weight: 700;">Tamanho mais equilibrado</span>
+              </div>
+              <span class="menu-item-price">R$ 25,00</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">A quantidade perfeita para um almoço farto e revigorante no meio do seu dia de trabalho.</p>
+              <div class="menu-item-ingredients">
+                <div>🍚 <strong>Base:</strong> Arroz farto e feijão com caldo caseiro</div>
+                <div>🥩 <strong>Até 2 carnes à escolha:</strong> Churrasco de maminha, linguiça, frango, estrogonofe ou pernil barbecue</div>
+                <div>🥗 <strong>Acompanhamentos:</strong> Farofa de calabresa, batata frita, refogado + salada ou sobremesa</div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+pedir+1+Marmitex+M%C3%A9dia+%28R%24+25%2C00%29." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+                Pedir Marmitex M
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Marmitex G -->
+          <div class="menu-item-card">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Marmitex Grande (G)</h3>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Para quem tem muita fome</span>
+              </div>
+              <span class="menu-item-price">R$ 28,00</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">Porção super generosa, embalagem recheada até a borda com variedade de carnes e guarnições.</p>
+              <div class="menu-item-ingredients">
+                <div>🍚 <strong>Base:</strong> Arroz e feijão reforçados</div>
+                <div>🥩 <strong>Carnes fartas:</strong> Carnes assadas e grelhadas no capricho</div>
+                <div>🥗 <strong>Acompanhamentos:</strong> Farofa especial, legumes, refogados e salada separada</div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+pedir+1+Marmitex+Grande+%28R%24+28%2C00%29." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+                Pedir Marmitex G
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: MIX DE CHURRASCO -->
+      <div class="menu-tab-pane" id="tab-churrasco">
+        <div class="menu-cards-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 800px; margin: 0 auto;">
+          <!-- Card Churrasco Média -->
+          <div class="menu-item-card featured" style="border-color: #27AE60;">
+            <span class="featured-badge badge-green">⭐ Especialidade</span>
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Marmitex Churrasco Média (650g)</h3>
+                <span style="font-size: 0.82rem; color: #27AE60; font-weight: 700;">4 Tipos de Carnes Nobres</span>
+              </div>
+              <span class="menu-item-price" style="color: #27AE60;">R$ 30,00</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">MIX irresistível de Maminha assada, Pernil ao molho barbecue, Linguiça suína e Linguiça de frango grelhadas.</p>
+              <div class="menu-item-ingredients">
+                <div>🥩 <strong>Carnes:</strong> Maminha + Pernil Barbecue + Linguiça Suína + Linguiça Frango</div>
+                <div>🍚 <strong>Guarnições:</strong> Arroz, feijão carioca, farofa de seleta com ovo e refogado</div>
+                <div>🥗 <strong>Salada:</strong> Vinagrete da casa, maionese cremosa ou paçoquinha</div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+pedir+1+Marmitex+Mix+de+Churrasco+M%C3%A9dia+650g+%28R%24+30%2C00%29." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+                Pedir Churrasco 650g
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Churrasco Grande -->
+          <div class="menu-item-card">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Marmitex Churrasco Grande (850g)</h3>
+                <span style="font-size: 0.82rem; color: var(--text-muted); font-weight: 700;">Almoço de Rei</span>
+              </div>
+              <span class="menu-item-price">R$ 35,00</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">Quase 1kg de pura comida caseira e churrasco de primeira para saciar quem trabalha duro o dia todo.</p>
+              <div class="menu-item-ingredients">
+                <div>🥩 <strong>Carnes:</strong> Fartura de maminha, pernil ao barbecue e linguiças selecionadas</div>
+                <div>🍚 <strong>Guarnições:</strong> Arroz, feijão temperado, farofa rica e acompanhamentos</div>
+                <div>🥗 <strong>Salada:</strong> Vinagrete, maionese ou legumes do dia</div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+pedir+1+Marmitex+Mix+de+Churrasco+Grande+850g+%28R%24+35%2C00%29." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+                Pedir Churrasco 850g
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: PORÇÕES & ACOMPANHAMENTOS -->
+      <div class="menu-tab-pane" id="tab-porcoes">
+        <div class="menu-cards-grid">
+          <div class="menu-item-card">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Torresmo Pururuca</h3>
+              <span class="menu-item-price">R$ 12 / 24</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">Sequinho, estaladiço e crocante. O torresmo mais famoso de Bofete.</p>
+              <div class="menu-item-ingredients">
+                <div>🥓 Opção 100g: <strong>R$ 12,00</strong></div>
+                <div>🥓 Opção 200g: <strong>R$ 24,00</strong></div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+pedir+uma+por%C3%A7%C3%A3o+de+torresmo." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">Pedir Torresmo</a>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Batata Frita Crocante</h3>
+              <span class="menu-item-price">R$ 6 / 12</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">Dourada, sequinha e crocante por fora e macia por dentro.</p>
+              <div class="menu-item-ingredients">
+                <div>🍟 Opção 100g: <strong>R$ 6,00</strong></div>
+                <div>🍟 Opção 200g: <strong>R$ 12,00</strong></div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+pedir+uma+por%C3%A7%C3%A3o+de+batata+frita." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">Pedir Batata Frita</a>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Mix de Saladas Frescas</h3>
+              <span class="menu-item-price">R$ 10,00</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">Pote de 300g com folhas frescas higienizadas, legumes cozidos e tempero natural.</p>
+              <div class="menu-item-ingredients">
+                <div>🥗 Folhas verdes, tomate, cenoura, beterraba, chuchu e abobrinha</div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+pedir+um+Mix+de+Saladas+300g." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">Pedir Salada</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: BEBIDAS & SUCOS -->
+      <div class="menu-tab-pane" id="tab-bebidas">
+        <div class="menu-cards-grid">
+          <div class="menu-item-card">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Sucos Naturais (500ml)</h3>
+              <span class="menu-item-price">R$ 12,00</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">Preparados na hora com fruta de verdade, super refrescantes.</p>
+              <div class="menu-item-ingredients">
+                <div>🍍 Abacaxi & Abacaxi com Hortelã</div>
+                <div>🍒 Acerola | 🍓 Morango</div>
+                <div>🍋 Limão | 🍊 Laranja | 🍈 Maracujá</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">* Com opção de gelo e açúcar à parte</div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+incluir+um+suco+natural+no+meu+pedido." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">Pedir Suco</a>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Tuiubaína Vieira (2L)</h3>
+              <span class="menu-item-price">R$ 10,00</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">A autêntica tubaína caipira, patrimônio de sabor do interior paulista. Tradicional ou Zero Açúcar.</p>
+              <div class="menu-item-ingredients">
+                <div>🥤 Tuiubaína Vieira 2 Litros: <strong>R$ 10,00</strong></div>
+                <div>🥤 Tuiubaína Vieira Zero 2 Litros: <strong>R$ 10,00</strong></div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+uma+Tuiuba%C3%ADna+Vieira+2L." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">Pedir Tuiubaína</a>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Linha Coca-Cola & Outros</h3>
+              <span class="menu-item-price">a partir R$ 3,50</span>
+            </div>
+            <div class="menu-item-body">
+              <p class="menu-item-desc">Bebidas geladas para acompanhar o seu almoço com perfeição.</p>
+              <div class="menu-item-ingredients">
+                <div>🥤 Água Mineral 500ml: <strong>R$ 3,50</strong></div>
+                <div>🥤 Latas (Coca, Fanta, Sprite, Schweppes): <strong>R$ 7,00</strong></div>
+                <div>🥤 Coca-Cola 600ml: <strong>R$ 9,00</strong> | 2 Litros: <strong>R$ 18,00</strong></div>
+                <div>🍺 Cervejas em lata (Brahma / Skol): <strong>R$ 7,00</strong></div>
+              </div>
+            </div>
+            <div class="menu-item-footer">
+              <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+adicionar+bebidas+no+meu+pedido." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">Pedir Bebidas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner de Pedido Digital MenuPrime -->
+      <div class="menuprime-banner">
+        <div class="menuprime-text">
+          <h4>📱 Prefere montar seu pedido pelo Cardápio Digital Online?</h4>
+          <p>Você pode acessar a plataforma MenuPrime do Restaurante Tempero Caseiro, escolher ingredientes passo a passo e agendar seu pedido.</p>
+        </div>
+        <div>
+          <a href="https://menuprime.com.br/tempero-caseiro" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Acessar MenuPrime Oficial ➔
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. QUEBRA DE DOR VS SOLUÇÃO -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">A Diferença no Seu Almoço</span>
+        <h2 class="section-title">Por que você nunca mais vai aceitar comida sem graça na hora do almoço?</h2>
+        <p class="section-subtitle">Seu intervalo de almoço é precioso. Você merece uma refeição farta, com gosto de comida de casa e sem estresse.</p>
+      </div>
+
+      <div class="pain-vs-solution-grid">
+        <div class="comparison-card pain">
+          <h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            Outros Restaurantes & Marmitas Comuns
+          </h3>
+          <div class="comparison-list">
+            <div class="comparison-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Comida requentada, sem tempero e com gosto industrializado.</span>
+            </div>
+            <div class="comparison-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Marmitas que chegam frias, reviradas ou com carne dura e pouca quantidade.</span>
+            </div>
+            <div class="comparison-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Ambiente abafado, barulhento e sem ar-condicionado para descansar.</span>
+            </div>
+            <div class="comparison-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Demora excessiva para responder no WhatsApp ou enviar a entrega.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-card solution">
+          <h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            No Restaurante Tempero Caseiro
+          </h3>
+          <div class="comparison-list">
+            <div class="comparison-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Tempero afetivo e natural:</strong> alho fresco, cebola dourada e ervas finas de verdade.</span>
+            </div>
+            <div class="comparison-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Marmitas térmicas seladas:</strong> quentinhas, com carnes macias e salada embalada à parte.</span>
+            </div>
+            <div class="comparison-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Salão 100% climatizado:</strong> ambiente agradável, mesas de madeira e ar refrescante.</span>
+            </div>
+            <div class="comparison-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Agilidade no atendimento:</strong> retirada a partir das 10h30 e delivery pontual em Bofete.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 4 DIFERENCIAIS EXCLUSIVOS -->
+  <section class="section-padding features-section" id="diferenciais">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">🍲</div>
+          <h4>Comida Feita na Hora</h4>
+          <p>Nada de comida amanhecida. Tudo é feito no dia com carinho a partir das 6h da manhã.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">🥩</div>
+          <h4>Carnes Assadas Suculentas</h4>
+          <p>Maminha, pernil ao barbecue, linguiça toscana grelhada, frango dourado e torresmo pururuca.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">❄️</div>
+          <h4>Salão Climatizado</h4>
+          <p>Ambiente moderno e acolhedor com ar-condicionado duplo para você almoçar com todo o conforto.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">🛵</div>
+          <h4>Delivery Ágil em Bofete</h4>
+          <p>Entregas a partir das 11h. Sua marmita chega quentinha e sem demora, com taxa a partir de R$ 3,00.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. NOSSO ESPAÇO: SALÃO E AMBIÊNCIA -->
+  <section class="gallery-section" id="espaco">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow" style="color: var(--accent-gold);">Estrutura e Conforto</span>
+        <h2 class="section-title">Um ambiente planejado para o seu bem-estar</h2>
+        <p class="section-subtitle">Conheça as instalações reais do Restaurante Tempero Caseiro em Bofete: rústico, acolhedor e limpo.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="./assets/restaurante.jpeg" alt="Salão Climatizado do Restaurante Tempero Caseiro">
+          <div class="gallery-overlay">
+            <h4>Salão Moderno & Rústico</h4>
+            <p>Mesas em madeira maciça, piso brilhante e climatização total com ar-condicionado duplo.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./assets/self-service.png" alt="Réchauds e Buffet com Pratos Variados">
+          <div class="gallery-overlay">
+            <h4>Buffet Sempre Aquecido</h4>
+            <p>Réchauds profissionais mantendo o sabor e a temperatura perfeita dos pratos.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./assets/maps.png" alt="Fachada na Rua 9 de Julho / Luiz Francisco Vieira">
+          <div class="gallery-overlay">
+            <h4>Fácil Acesso no Centro</h4>
+            <p>Prédio moderno de estrutura metálica preta e fachada envidraçada no Centro de Bofete.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. PROVA SOCIAL & PRÊMIO TOP 2024 -->
+  <section class="section-padding" id="avaliacoes">
+    <div class="container">
+      <div class="award-banner">
+        <div class="award-badge-huge">
+          <div class="trophy">🏆</div>
+          <span>TOP 2024</span>
+        </div>
+        <div class="award-content">
+          <h3>Vencedor do Prêmio Minha Cidade é Top 2024</h3>
+          <p>
+            Eleito pelos moradores e clientes como o <strong>Melhor Restaurante de Bofete</strong>. Um reconhecimento público ao nosso compromisso diário com qualidade, higiene exemplar, atendimento carinhoso e um tempero verdadeiramente inigualável.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-eyebrow">Quem Prova, Vira Cliente Fiel</span>
+        <h2 class="section-title">O que dizem os clientes de Bofete</h2>
+        <p class="section-subtitle">Mais de uma década servindo com carinho moradores locais, viajantes e trabalhadores do nosso município.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "A melhor comida caseira de Bofete, sem dúvidas! O tempero é suave, nada gorduroso e as carnes assadas são sensacionais. O salão climatizado faz toda a diferença para o almoço do trabalho."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">MS</div>
+            <div class="author-info">
+              <h5>Marcelo Santana</h5>
+              <span>Empresário em Bofete • Cliente há 4 anos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Peço a marmitex quase todos os dias pelo WhatsApp. Chega sempre pontual, muito bem embalada e bem servida. A feijoada de sábado virou tradição na minha casa com a família toda!"
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">AP</div>
+            <div class="author-info">
+              <h5>Ana Paula Oliveira</h5>
+              <span>Moradora do Centro • Pedidos frequentes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "O atendimento das meninas é nota 10, sempre muito educadas. Parabéns pelo Prêmio Top 2024, totalmente merecido! Comida de qualidade com preço super justo."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">RF</div>
+            <div class="author-info">
+              <h5>Roberto Figueiredo</h5>
+              <span>Visitante / Motorista • Avaliação Google</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. COMO PEDIR EM 3 PASSOS -->
+  <section class="section-padding steps-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Simples, Rápido e Sem Fila</span>
+        <h2 class="section-title">Almoço garantido em 3 passos</h2>
+        <p class="section-subtitle">Tanto para comer no nosso restaurante quanto para receber em casa.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h4>Escolha a Modalidade</h4>
+          <p>Decida se quer saborear no nosso salão climatizado ou receber seu marmitex farto onde você estiver.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h4>Peça no WhatsApp</h4>
+          <p>Clique no botão e envie uma mensagem rápida. Nossa equipe envia as opções de carnes e guarnições do dia.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h4>Saboreie seu Almoço</h4>
+          <p>Retire no balcão sem demora ou receba sua entrega quentinha para se deliciar sem sujar louça em casa.</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 45px;">
+        <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+gostaria+de+fazer+um+pedido+de+almo%C3%A7o+para+hoje." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z"/>
+          </svg>
+          Chamar no WhatsApp (14) 98130-3429
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ INTERATIVO -->
+  <section class="section-padding" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Tire Suas Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-subtitle">Tudo o que você precisa saber sobre nossos horários, entregas e formas de pagamento.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item active">
+          <button class="faq-header" aria-expanded="true">
+            <span>A partir de que horas posso retirar ou pedir marmitex?</span>
+            <div class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-content" style="max-height: 200px;">
+            <div class="faq-body">
+              A <strong>retirada no balcão</strong> inicia a partir das <strong>10h30</strong>. As <strong>entregas via delivery</strong> começam a partir das <strong>11h00</strong>. Nosso salão e atendimento ficam disponíveis até às <strong>15h00</strong> todos os dias.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span>Quais são os tamanhos e preços das Marmitex?</span>
+            <div class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-body">
+              Nossas marmitex tradicionais custam: <strong>P (R$ 22,00)</strong>, <strong>M (R$ 25,00)</strong> e <strong>G (R$ 28,00)</strong>. Também temos a famosa <strong>Marmitex Mix de Churrasco</strong> (Média 650g por R$ 30,00 e Grande 850g por R$ 35,00) com 4 cortes de carnes selecionadas.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span>Como funciona a taxa de entrega e o tempo de espera?</span>
+            <div class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-body">
+              Entregamos em todos os bairros urbanos e empresas de Bofete. A taxa de entrega é a partir de apenas <strong>R$ 3,00</strong>, e o tempo médio estimado é de cerca de 30 a 45 minutos.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span>Quais formas de pagamento são aceitas?</span>
+            <div class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-body">
+              Aceitamos <strong>PIX</strong> (Chave: 14981303429), dinheiro em espécie, cartões de débito, crédito e <strong>VEROCARD</strong>. Os entregadores levam a maquininha até você.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span>O salão conta com ar-condicionado e estacionamento?</span>
+            <div class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-body">
+              Sim! Nosso salão conta com <strong>ar-condicionado duplo</strong>, mesas espaçosas de madeira maciça e rua ampla e tranquila para estacionar com total facilidade em frente ao restaurante no Centro de Bofete.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. LOCALIZAÇÃO E CONTATO -->
+  <section class="section-padding" id="contato" style="background: var(--bg-card-alt);">
+    <div class="container">
+      <div class="location-card">
+        <div class="location-info">
+          <span class="section-eyebrow">Venha nos Visitar</span>
+          <h3>Localização Fácil no Centro de Bofete</h3>
+
+          <div class="location-details">
+            <div class="loc-item">
+              <div class="loc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="loc-text">
+                <h5>Endereço Completo</h5>
+                <p>Rua Luiz Francisco Vieira, nº 189 / Rua 9 de Julho — Centro<br>Bofete - SP, CEP 18590-000</p>
+              </div>
+            </div>
+
+            <div class="loc-item">
+              <div class="loc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <div class="loc-text">
+                <h5>Horários de Funcionamento</h5>
+                <p><strong>Segunda a Domingo:</strong> 10h30 às 15h00<br>Retirada das 10h30 | Delivery a partir das 11h00</p>
+              </div>
+            </div>
+
+            <div class="loc-item">
+              <div class="loc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="loc-text">
+                <h5>Telefone & WhatsApp</h5>
+                <p><strong>(14) 98130-3429</strong><br>PIX: 14981303429</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://maps.google.com/?q=Restaurante+Tempero+Caseiro+Bofete+SP" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+              Abrir no Google Maps
+            </a>
+            <a href="https://wa.me/5514981303429?text=Ol%C3%A1%2C+quero+saber+como+chegar+ao+restaurante." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="location-map-wrapper">
+          <img src="./assets/maps.png" alt="Fachada do Restaurante Tempero Caseiro em Bofete">
+          <div class="location-map-tag">
+            <span>📍 Ponto de Referência: Prédio moderno com fachada de vidro no Centro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. CTA FINAL DE FECHAMENTO -->
+  <section class="cta-final-section">
+    <div class="container">
+      <div class="cta-final-box">
+        <span class="section-eyebrow">Seu Almoço de Hoje</span>
+        <h2>O que você vai almoçar hoje? Deixe o preparo por nossa conta!</h2>
+        <p>
+          Economize tempo, evite panelas sujas e garanta uma refeição inesquecível com o sabor autêntico do interior. Chame agora no WhatsApp antes que as melhores opções do buffet acabem!
+        </p>
+
+        <div class="cta-final-actions">
+          <a href="https://wa.me/5514981303429?text=Ol%C3%A1%21+Quero+garantir+meu+almo%C3%A7o+de+hoje+no+Restaurante+Tempero+Caseiro." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z"/>
+            </svg>
+            Pedir Marmitex no WhatsApp
+          </a>
+
+          <a href="https://menuprime.com.br/tempero-caseiro" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.08); color: #FFFFFF; border-color: rgba(255,255,255,0.2);">
+            Pedir pelo MenuPrime
+          </a>
+        </div>
+
+        <div class="guarantee-note">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#27AE60" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Refeição farta, saborosa e com a garantia do Prêmio Top 2024 de Bofete.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="brand-logo">
+            <img src="./assets/logo.png" alt="Restaurante Tempero Caseiro Bofete">
+          </a>
+          <p>
+            O melhor restaurante de comida caseira de Bofete. Tradição, carinho no preparo e o autêntico sabor do interior paulista.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/temperocaseirobofete" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com/Restaurantetemperocaseirobofete" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/5514981303429" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio & Preços</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#espaco">Nosso Salão</a>
+            <a href="#avaliacoes">Prêmio Top 2024</a>
+            <a href="#faq">Dúvidas Frequentes</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horário do Almoço</h4>
+          <ul class="footer-hours-list">
+            <li><span>Segunda a Domingo:</span> <strong>10:30 - 15:00</strong></li>
+            <li><span>Retirada no Balcão:</span> <strong>A partir de 10:30</strong></li>
+            <li><span>Delivery / Entrega:</span> <strong>A partir de 11:00</strong></li>
+            <li><span>Taxa de Entrega:</span> <strong>A partir de R$ 3,00</strong></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato Direto</h4>
+          <p style="margin-bottom: 12px;">
+            <strong>Telefone / WhatsApp:</strong><br>
+            <a href="https://wa.me/5514981303429" style="color: var(--accent-gold); font-weight: 700;">(14) 98130-3429</a>
+          </p>
+          <p>
+            <strong>Endereço:</strong><br>
+            Rua Luiz Francisco Vieira, 189 / 9 de Julho<br>Centro — Bofete - SP, 18590-000
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="currentYear">2026</span> Restaurante Tempero Caseiro Bofete. Todos os direitos reservados.
+        </div>
+        <div>
+          Eleito o Melhor Restaurante de Bofete • Prêmio Minha Cidade é Top 2024
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 14. BOTÃO FLUTUANTE DE WHATSAPP -->
+  <a href="https://wa.me/5514981303429?text=Ol%C3%A1%21+Vim+pelo+site+do+Restaurante+Tempero+Caseiro+e+gostaria+de+fazer+um+pedido." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Conversar no WhatsApp">
+    <div class="whatsapp-tooltip">
+      💬 Fale com o Restaurante no WhatsApp!
+    </div>
+    <div class="whatsapp-circle">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z"/>
+      </svg>
+    </div>
+  </a>
+
+  <!-- SCRIPTS VANILLA PURO -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Atualizar Ano Dinâmico
+      const yearEl = document.getElementById('currentYear');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // 2. Menu Mobile
+      const mobileToggle = document.getElementById('mobileToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (mobileToggle && navMenu) {
+        mobileToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('open');
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            navMenu.classList.remove('open');
+          });
+        });
+      }
+
+      // 3. Abas do Cardápio Interativo
+      const tabButtons = document.querySelectorAll('.menu-tab-btn');
+      const tabPanes = document.querySelectorAll('.menu-tab-pane');
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabButtons.forEach(b => b.classList.remove('active'));
+          tabPanes.forEach(p => p.classList.remove('active'));
+
+          btn.classList.add('active');
+          const targetPaneId = btn.getAttribute('data-tab');
+          const targetPane = document.getElementById(targetPaneId);
+          if (targetPane) {
+            targetPane.classList.add('active');
+          }
+        });
+      });
+
+      // 4. FAQ Accordion
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const header = item.querySelector('.faq-header');
+        const content = item.querySelector('.faq-content');
+
+        header.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+              otherItem.querySelector('.faq-header').setAttribute('aria-expanded', 'false');
+              otherItem.querySelector('.faq-content').style.maxHeight = '0px';
+            }
+          });
+
+          if (isActive) {
+            item.classList.remove('active');
+            header.setAttribute('aria-expanded', 'false');
+            content.style.maxHeight = '0px';
+          } else {
+            item.classList.add('active');
+            header.setAttribute('aria-expanded', 'true');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+
+      // 5. Header Sombra ao Scroll
+      const mainHeader = document.querySelector('.main-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          mainHeader.style.boxShadow = '0 10px 25px rgba(35, 27, 21, 0.08)';
+        } else {
+          mainHeader.style.boxShadow = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
