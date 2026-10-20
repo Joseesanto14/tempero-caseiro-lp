@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Google tag (gtag.js) - DataTech Analytics Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9WDL5CP3K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M9WDL5CP3K');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante Tempero Caseiro | O Melhor de Bofete - SP | Cardápio & Marmitex</title>
@@ -2649,6 +2659,18 @@
         } else {
           mainHeader.style.boxShadow = 'none';
         }
+      });
+
+      // 6. Rastreamento Automático DataTech (Google Analytics 4)
+      document.querySelectorAll('a[href*="wa.me"]').forEach(button => {
+        button.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'click_whatsapp', {
+              event_category: 'Conversao',
+              event_label: button.innerText.trim() || 'Botao Flutuante WhatsApp'
+            });
+          }
+        });
       });
     });
   </script>
